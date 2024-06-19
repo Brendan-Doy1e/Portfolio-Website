@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import ProjectCard from '@/components/ProjectCard';
 
 const projects = [
   { id: 1, title: 'Project One', description: 'Description of project one.' },
@@ -46,10 +47,7 @@ export default function Projects() {
         <h1 className="text-4xl font-semibold text-white text-shadow-lg mb-8">My Projects</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {projects.map((project) => (
-            <div key={project.id} className="bg-white bg-opacity-10 backdrop-blur-lg rounded-lg p-6 text-white text-shadow-lg">
-              <h2 className="text-2xl font-semibold mb-4">{project.title}</h2>
-              <p>{project.description}</p>
-            </div>
+            <ProjectCard key={project.id} title={project.title} description={project.description} />
           ))}
         </div>
         <Link href="/" legacyBehavior>
