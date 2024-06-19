@@ -1,14 +1,15 @@
 "use client";
 
 import { TypeAnimation } from 'react-type-animation';
+import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen items-center justify-center p-24 bg-cover bg-center" style={{ backgroundImage: 'url(/path/to/your/background-image.jpg)', backgroundBlendMode: 'darken', backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
+    <main className="flex min-h-screen items-center justify-center p-24 bg-cover bg-center" style={{ backgroundImage: 'url(/img/background.jpg)', backgroundBlendMode: 'darken', backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
       <div className="flex w-full max-w-7xl lg:flex-row flex-col items-center justify-center">
         
-        <div className="flex-1 mb-32 lg:mb-0 lg:w-2/3 lg:text-left text-center flex flex-col justify-center">
-          <div className="h-32"> {/* Adjust the height as needed */}
+        <div className="flex-1 mb-32 lg:mb-0 lg:w-2/3 lg:text-left text-center flex flex-col justify-center bg-white bg-opacity-10 backdrop-blur-lg rounded-lg p-6">
+          <div className="h-32">
             <div className="mb-3 text-3xl font-semibold text-white text-shadow-lg">
               <TypeAnimation
                 sequence={['public String welcome() {']}
@@ -87,24 +88,21 @@ export default function Home() {
             </div>
           </a>
 
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            className="group rounded-lg border border-transparent px-4 py-3 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 flex items-center justify-center w-2/3 mx-auto transform hover:scale-105 transition-transform animate-slideInRight"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="text-center text-white text-shadow-lg">
-              <h2 className="mb-3 text-2xl font-semibold">
-                My Projects{" "}
-                <span className="inline-block transition-transform group-hover:translate-x-2 motion-reduce:transform-none">
-                  -&gt;
-                </span>
-              </h2>
-              <p className="m-0 max-w-[30ch] text-sm opacity-50">
-                Check out my projects.
-              </p>
-            </div>
-          </a>
+          <Link href="/projects" legacyBehavior>
+            <a className="group rounded-lg border border-transparent px-4 py-3 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 flex items-center justify-center w-2/3 mx-auto transform hover:scale-105 transition-transform animate-slideInRight">
+              <div className="text-center text-white text-shadow-lg">
+                <h2 className="mb-3 text-2xl font-semibold">
+                  My Projects{" "}
+                  <span className="inline-block transition-transform group-hover:translate-x-2 motion-reduce:transform-none">
+                    -&gt;
+                  </span>
+                </h2>
+                <p className="m-0 max-w-[30ch] text-sm opacity-50">
+                  Check out my projects.
+                </p>
+              </div>
+            </a>
+          </Link>
         </div>
       </div>
     </main>
