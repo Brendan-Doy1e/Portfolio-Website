@@ -21,6 +21,8 @@ body {
   color: rgb(var(--foreground-rgb));
   background: url('/img/background.jpg') no-repeat center center fixed;
   background-size: cover;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
 }
 
 @layer utilities {
@@ -28,3 +30,31 @@ body {
     text-wrap: balance;
   }
 }
+
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/font/Montserrat-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('/font/OpenSans-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-opensans {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
