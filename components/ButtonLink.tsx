@@ -5,6 +5,7 @@ interface ButtonLinkProps {
   href: string;
   text: string;
   description: string;
+  techStack: string;
 }
 
 export default function ButtonLink({ href, text, description }: ButtonLinkProps) {
