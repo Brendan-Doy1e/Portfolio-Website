@@ -12,7 +12,7 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ title, description, techStack, imageSrc, Url }: ProjectCardProps) {
   return (
-    <Link href={Url || "#"} passHref className="block bg-white bg-opacity-10 backdrop-blur-lg rounded-lg p-6 text-white text-shadow-lg flex flex-col h-full relative transition-transform duration-300 hover:scale-102 hover:shadow-md">
+    <Link href={Url || "#"} passHref className="block bg-white bg-opacity-10 backdrop-blur-lg rounded-lg p-6 font-montserrat text-shadow flex flex-col h-full relative">
         <div className="flex items-center mb-4">
           {imageSrc && (
             <div className="w-12 h-12 mr-4">
@@ -21,7 +21,7 @@ export default function ProjectCard({ title, description, techStack, imageSrc, U
           )}
           <h2 className="text-2xl font-semibold">{title}</h2>
         </div>
-        <hr className="my-2 border-gray-300 opacity-50" />
+        <hr className="my-2 border-gray-300 opacity-50 " />
         <div className="flex-grow">
           <p dangerouslySetInnerHTML={{ __html: description }} />
         </div>

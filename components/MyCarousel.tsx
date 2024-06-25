@@ -47,9 +47,9 @@ const MyCarousel: React.FC = () => {
         renderButtonGroupOutside={true}
         customButtonGroup={<ButtonGroup next={() => {}} previous={() => {}} />}
         dotListClass="custom-dot-list-style"
-        itemClass="carousel-item"
+        itemClass="carousel-item wider-card"
         arrows={false}
-        customDot={<CustomDot onClick={() =>{}} active/>}
+        customDot={<CustomDot onClick={() => {}} active />}
         renderDotsOutside={true}
       >
         {projects.map((project) => (

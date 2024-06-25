@@ -3,7 +3,7 @@
       "id": 1,
       "title": "BCIT Data Control List",
       "description": "My team and I replaced the outdated MS Access system with a new custom database for policy management.<br/><br/>A new user interface offers a seamless and responsive experience, allowing efficient navigation and task completion.<br/><br/>Incorporated secure authentication, advanced search capabilities, and automated report generation to improve efficiency and reduce errors.",
-      "techStack": "Next.js, PostgreSQL, Prisma, Tailwind CSS, TypeScript, Vercel, NextAuth, Amazon S3, pgAdmin, Vercel",
+      "techStack": "Next.js, PostgreSQL, Prisma, Tailwind CSS, TypeScript, Vercel, NextAuth, Amazon S3, pgAdmin,",
       "imageSrc": "/img/bcit.jpeg",
       "Url": "https://bcit-dcl.vercel.app/"
     },
@@ -54,6 +54,14 @@
       "techStack": "C, C++, Windows API, XAudio2, Direct2D, DirectWrite, Visual Studio 2019",
       "imageSrc": "/img/DS.webp",
       "Url": "https://github.com/victoramaim/Comp-4995-Project"
+    },
+    {
+      "id": 8,
+      "title": "My Portfolio",
+      "description": "This is my personal portfolio website that showcases my projects.<br/><br/>I wanted to tell you a bit about myself and present my projects in an easy and minimalist way. The website is fully responsive and was built to help me learn more about React and Next.js.",
+      "techStack": "Next.js, React, Tailwind CSS, TypeScript, Vercel",
+      "imageSrc": "/img/self.jpg",
+      "Url": "https://github.com/Brendan-Doy1e/Portfolio-Website"
     }
   ]
   

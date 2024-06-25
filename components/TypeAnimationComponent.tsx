@@ -18,7 +18,7 @@ export default function TypeAnimationComponent() {
         <TypeAnimation
           sequence={[
             1200,
-            '        return "Hello world, I\'m Brendan!";'.replace(/ /g, '\u00a0'), // 8 non-breaking spaces for 2 tabs
+            '        return "Hello world, I\'m Brendan!";'.replace(/ /g, '\u00a0'),
           ]}
           wrapper="div"
           cursor={false}
