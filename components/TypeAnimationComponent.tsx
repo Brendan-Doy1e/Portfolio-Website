@@ -6,7 +6,7 @@ import { isMobile } from 'react-device-detect';
 
 export default function TypeAnimationComponent() {
   return (
-    <div className={isMobile ? "h-auto" : "h-32"}>
+    <div className={isMobile ? "h-32" : "h-32"}>
       <div className="mb-3 text-3xl font-semibold text-white text-shadow-lg">
         <TypeAnimation
           sequence={['public String welcome() {']}
