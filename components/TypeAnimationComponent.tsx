@@ -7,9 +7,7 @@ import { isMobile } from 'react-device-detect';
 export default function TypeAnimationComponent() {
   const mobileSequence = [
     1200,
-    'return "Hello world,',
-    3000,
-    'I\'m Brendan!";}'
+    'return "Hello world,\nI\'m Brendan!";}'
   ];
 
   const desktopSequence = [
