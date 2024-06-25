@@ -333,3 +333,12 @@ body {
   width: 20%; 
   margin: 0 auto; 
 }
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.text-wrap {
+  word-wrap: break-word;
+  white-space: normal;
+}
