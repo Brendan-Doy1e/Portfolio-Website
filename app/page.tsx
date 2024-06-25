@@ -5,10 +5,10 @@ import ButtonLink from '@/components/ButtonLink';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen items-center justify-center p-24 bg-cover bg-center" style={{ backgroundImage: 'url(/img/background.jpg)', backgroundBlendMode: 'darken', backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
+    <main className="flex min-h-screen items-center justify-center p-6 sm:p-12 md:p-24 bg-cover bg-center" style={{ backgroundImage: 'url(/img/background.jpg)', backgroundBlendMode: 'darken', backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
       <div className="flex w-full max-w-7xl lg:flex-row flex-col items-center justify-center">
         <AboutMeSection />
-        <div className="flex-1 mb-32 lg:mb-0 lg:w-1/3 lg:text-left text-center flex flex-col space-y-4 justify-center">
+        <div className="flex-1 mb-16 sm:mb-24 md:mb-32 lg:mb-0 w-full lg:w-1/3 lg:text-left text-center flex flex-col space-y-4 justify-center">
           <ButtonLink
             href="https://www.linkedin.com/in/brendan-j-doyle/"
             text="LinkedIn"
