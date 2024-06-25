@@ -2,10 +2,11 @@
 
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
+import { isMobile } from 'react-device-detect';
 
 export default function TypeAnimationComponent() {
   return (
-    <div className="h-32 overflow-hidden text-wrap">
+    <div className={isMobile ? "h-auto" : "h-32"}>
       <div className="mb-3 text-3xl font-semibold text-white text-shadow-lg">
         <TypeAnimation
           sequence={['public String welcome() {']}
