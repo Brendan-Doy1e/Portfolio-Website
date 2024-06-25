@@ -4,6 +4,7 @@ import 'react-multi-carousel/lib/styles.css';
 import ProjectCard from './ProjectCard';
 import projects from '@/app/projects.json';
 import ButtonGroup from './ButtonGroup';
+import CustomDot from './CustomDot';
 
 const responsive = {
   superLargeDesktop: {
@@ -48,6 +49,8 @@ const MyCarousel: React.FC = () => {
         dotListClass="custom-dot-list-style"
         itemClass="carousel-item"
         arrows={false}
+        customDot={<CustomDot onClick={() =>{}} active/>}
+        renderDotsOutside={true}
       >
         {projects.map((project) => (
           <ProjectCard
@@ -56,6 +59,7 @@ const MyCarousel: React.FC = () => {
             description={project.description}
             techStack={project.techStack}
             imageSrc={project.imageSrc}
+            Url={project.Url}
           />
         ))}
       </Carousel>

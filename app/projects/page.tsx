@@ -38,9 +38,6 @@ export default function ProjectsPage() {
       <div className="max-w-7xl mx-auto py-4">
         <h1 className="text-4xl font-bold text-white text-shadow-lg mb-8 text-center">Brendan's Projects</h1>
         <MyCarousel />
-        <Link href="/" legacyBehavior>
-          <a className="mt-8 inline-block text-xl text-white underline">Go back</a>
-        </Link>
       </div>
     </motion.main>
   );

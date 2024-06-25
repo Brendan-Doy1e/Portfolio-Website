@@ -75,18 +75,6 @@ body {
   animation: slideInRight 2s ease-out forwards;
 }
 
-
-/* Adjustments for the carousel container to ensure arrows do not overlap */
-.carousel-wrapper {
-  padding: 0 4rem; /* Adjust padding as necessary */
-  position: relative;
-}
-
-.carousel-container {
-  width: 100%;
-  overflow: visible;
-}
-
 .carousel-item {
   padding: 0;
   transform: scale(0.8);
@@ -95,22 +83,32 @@ body {
 }
 
 .carousel-item:hover {
-  transform: scale(1.05);
+  transform: scale(1);
   z-index: 2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+/* Add these styles for the custom dot list */
 .custom-dot-list-style {
-  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
 }
 
-.react-multi-carousel-list {
-  margin-left: 50px;
-  margin-right: 50px;
+.custom-dot-list-style .react-multi-carousel-dot {
+  background: transparent;
+  border: 2px solid white; /* Border color for the dots */
+  border-radius: 50%;
+  margin: 0 5px; /* Space between dots */
+  padding: 5px;
+  transition: background 0.3s ease;
 }
 
-.react-multi-carousel-track {
-  overflow: visible !important;
+.custom-dot-list-style .react-multi-carousel-dot--active {
+  background: white; /* Active dot color */
 }
+
+
 
 .absolute {
   position: absolute;
