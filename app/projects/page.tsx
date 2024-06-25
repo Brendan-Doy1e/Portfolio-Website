@@ -2,8 +2,7 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import ProjectCard from '@/components/ProjectCard';
-import projects from '../projects.json';
+import MyCarousel from '@/components/MyCarousel';
 
 const pageVariants = {
   initial: {
@@ -34,22 +33,11 @@ export default function ProjectsPage() {
       exit="out"
       variants={pageVariants}
       transition={pageTransition}
-      className="min-h-screen pt-2 px-24 bg-cover bg-center"
-      style={{ backgroundImage: 'url(/img/background.jpg)' }}
+      className="min-h-screen pt-12 px-24 bg-cover bg-center"
     >
-      <div className="max-w-7xl mx-auto py-8">
-        <h1 className="text-4xl font-semibold text-white text-shadow-lg mb-8">My Projects</h1>
-        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project) => (
-            <ProjectCard
-              key={project.id}
-              title={project.title}
-              description={project.description}
-              techStack={project.techStack}
-              imageSrc={project.imageSrc}
-            />
-          ))}
-        </div>
+      <div className="max-w-7xl mx-auto py-4">
+        <h1 className="text-4xl font-bold text-white text-shadow-lg mb-8 text-center">Brendan's Projects</h1>
+        <MyCarousel />
         <Link href="/" legacyBehavior>
           <a className="mt-8 inline-block text-xl text-white underline">Go back</a>
         </Link>
