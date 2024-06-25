@@ -5,9 +5,21 @@ import { TypeAnimation } from 'react-type-animation';
 import { isMobile } from 'react-device-detect';
 
 export default function TypeAnimationComponent() {
+  const mobileSequence = [
+    1200,
+    'return "Hello world,',
+    3000,
+    'I\'m Brendan!";}'
+  ];
+
+  const desktopSequence = [
+    1200,
+    '        return "Hello world, I\'m Brendan!";'
+  ];
+
   return (
-    <div className={isMobile ? "h-32" : "h-32"}>
-      <div className="mb-3 text-3xl font-semibold text-white text-shadow-lg">
+    <div className={`relative ${isMobile ? "h-auto" : "h-32"} w-full`}>
+      <div className="mb-3 text-3xl font-semibold text-white text-shadow-lg whitespace-pre-wrap break-words">
         <TypeAnimation
           sequence={['public String welcome() {']}
           wrapper="div"
@@ -15,18 +27,16 @@ export default function TypeAnimationComponent() {
           repeat={0}
         />
       </div>
-      <div className="mb-3 text-3xl font-semibold text-white text-shadow-lg">
+      <div className="mb-3 text-3xl font-semibold text-white text-shadow-lg whitespace-pre-wrap break-words">
         <TypeAnimation
-          sequence={[
-            1200,
-            '        return "Hello world, I\'m Brendan!";'.replace(/ /g, '\u00a0'),
-          ]}
+          sequence={isMobile ? mobileSequence : desktopSequence}
           wrapper="div"
           cursor={false}
           repeat={0}
         />
       </div>
-      <div className="mb-3 text-3xl font-semibold text-white text-shadow-lg">
+      {!isMobile && (
+      <div className="mb-3 text-3xl font-semibold text-white text-shadow-lg whitespace-pre-wrap break-words">
         <TypeAnimation
           sequence={[
             4200,
@@ -37,6 +47,7 @@ export default function TypeAnimationComponent() {
           repeat={0}
         />
       </div>
+      )}
     </div>
   );
 }
