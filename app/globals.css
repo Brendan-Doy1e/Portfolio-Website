@@ -332,6 +332,7 @@ body {
 .carousel-item.wider-card {
   width: 20%; 
   margin: 0 auto; 
+  min-width: 300px;
 }
 
 .overflow-hidden {
@@ -342,3 +343,5 @@ body {
   word-wrap: break-word;
   white-space: normal;
 }
+
+

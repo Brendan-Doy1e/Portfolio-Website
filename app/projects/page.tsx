@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import MyCarousel from '@/components/MyCarousel';
+import { isMobile } from 'react-device-detect';
 
 const pageVariants = {
   initial: {
@@ -33,13 +34,13 @@ export default function ProjectsPage() {
       exit="out"
       variants={pageVariants}
       transition={pageTransition}
-      className="relative min-h-screen flex items-center justify-center bg-cover bg-center"
+      className={`min-h-screen flex items-center justify-center ${isMobile ? "flex-col justify-start pt-4 px-4" : "pt-12 px-24"} bg-cover bg-center`}
     >
-      <div className="w-full mx-auto py-4 px-4 md:px-8 lg:px-24">
+      <div className="w-full mx-auto mb-4 lg:mb-8">
         <MyCarousel />
       </div>
       <Link href="/" legacyBehavior>
-        <a className="absolute bottom-4 left-4 bg-gray-800 text-white px-4 py-2 rounded-md shadow-lg hover:bg-gray-700 transition-colors">
+        <a className={`absolute ${isMobile ? "bottom-4 left-4" : "bottom-4 left-4"} bg-gray-800 text-white px-4 py-2 rounded-md shadow-lg hover:bg-gray-700 transition-colors`}>
           Go Back
         </a>
       </Link>
