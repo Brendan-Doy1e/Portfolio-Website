@@ -47,7 +47,7 @@ const MyCarousel: React.FC = () => {
         renderButtonGroupOutside={true}
         customButtonGroup={<ButtonGroup next={() => {}} previous={() => {}} />}
         dotListClass="custom-dot-list-style"
-        itemClass="carousel-item wider-card" 
+        itemClass="carousel-item wider-card" // Ensure this class is applied
         arrows={false}
         customDot={<CustomDot onClick={() => {}} active />}
         renderDotsOutside={true}
