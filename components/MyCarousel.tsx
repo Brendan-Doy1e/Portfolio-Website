@@ -14,12 +14,12 @@ const responsive = {
   },
   desktop: {
     breakpoint: { max: 1024, min: 768 },
-    items: 3,
+    items: 2,
     slidesToSlide: 1
   },
   tablet: {
     breakpoint: { max: 768, min: 464 },
-    items: 2,
+    items: 1,
     slidesToSlide: 1
   },
   mobile: {
@@ -47,7 +47,7 @@ const MyCarousel: React.FC = () => {
         renderButtonGroupOutside={true}
         customButtonGroup={<ButtonGroup next={() => {}} previous={() => {}} />}
         dotListClass="custom-dot-list-style"
-        itemClass="carousel-item wider-card" // Ensure this class is applied
+        itemClass="carousel-item wider-card"
         arrows={false}
         customDot={<CustomDot onClick={() => {}} active />}
         renderDotsOutside={true}

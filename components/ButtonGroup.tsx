@@ -7,7 +7,7 @@ interface ButtonGroupProps {
 }
 
 const ButtonGroup: React.FC<ButtonGroupProps> = ({ next, previous }) => {
-  if (isMobile) return null; // Hide buttons on mobile devices
+  if (isMobile) return null; 
 
   return (
     <div className="absolute flex justify-between w-full top-1/2 transform -translate-y-1/2 pointer-events-none">

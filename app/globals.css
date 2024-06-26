@@ -341,9 +341,9 @@ body {
   margin: 0 auto; 
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .carousel-item.wider-card {
-    width: 40%;
+    width: 95%;
   }
 }
 
@@ -353,9 +353,6 @@ body {
   }
 }
 
-.overflow-hidden {
-  overflow: hidden;
-}
 
 .text-wrap {
   word-wrap: break-word;
