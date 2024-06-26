@@ -34,9 +34,9 @@ export default function ProjectsPage() {
       exit="out"
       variants={pageVariants}
       transition={pageTransition}
-      className={`min-h-screen flex ${isMobile ? "flex-col justify-start pt-4 px-2" : "items-center justify-center pt-12 px-24"} bg-cover bg-center`}
+      className={`min-h-screen flex ${isMobile ? "flex-col justify-start" : "items-center justify-center pt-14 px-12"} bg-cover bg-center`}
     >
-      <div className={`w-full ${isMobile ? "mt-4" : "mx-auto mb-4 lg:mb-8"}`}>
+      <div className={`w-full ${isMobile ? "mt-0.5" : "mx-auto mb-4 lg:mb-8"}`}>
         <MyCarousel />
       </div>
       <Link href="/" legacyBehavior>
